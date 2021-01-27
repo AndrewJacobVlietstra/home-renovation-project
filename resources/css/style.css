@@ -76,7 +76,8 @@ ul {
     padding: 5rem 0;
 }
 
-.btn {
+.btn,
+input[type="submit"] {
     margin: 1rem;
     padding: 0.6rem 0.85rem;
     font-size: 110%;
@@ -93,7 +94,8 @@ ul {
     color: #fff;
 }
 
-.btn:hover {
+.btn:hover,
+input[type="submit"]:hover {
     background: var(--button-color);
     color: #fff;
 }
@@ -225,12 +227,14 @@ ul {
     
 }
 
-.services i {
+.services i,
+.contact-info i {
     margin-bottom: 1rem;
     color: var(--secondary-color);
     transition: all 0.3s;
 }
-.services i:hover {color: rgb(255, 206, 71);}
+.services i:hover,
+.contact-info i:hover {color: rgb(255, 206, 71);}
 
 .services h1,
 .services h2,
@@ -302,8 +306,8 @@ ul {
 .testimonial-paragraph {
     font-size: 1.05rem;
     line-height: 1.5;
-    width: 50%;
-    font-weight: 300;
+    width: 60%;
+    font-weight: 100;
     color: #afafaf;
     margin: 1rem auto 0 auto;
     text-align: center;
@@ -313,11 +317,155 @@ ul {
 .slick-prev::before,
 .slick-next::before {
     color: var(--secondary-color) !important;
-    font-size: 10rem;
+    font-size: 2.4rem !important;
 }
+
 
 /* Carousel dots color */
 .slick-dots li button:before{
     margin-top: 1rem;
     color: #fff !important;
+}
+
+
+/* Footer Section */
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: baseline;
+    grid-gap: 5rem;
+}
+
+
+.discuss-project {
+    text-align: left;
+}
+.discuss-project h2 {
+    margin-top: 1rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+.discuss-project p {
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+
+.contact-name {
+    grid-area: contact-name;
+}
+.contact-email {
+    grid-area: contact-email;
+}
+.contact-phone {
+    grid-area: contact-phone;
+}
+.contact-address {
+    grid-area: contact-address;
+}
+
+.contact-grid-container .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "contact-name contact-email"
+    "contact-phone contact-address";
+    grid-gap: 2.5rem;
+}
+
+.contact-info i {
+    font-size: 2.2rem;
+    margin: 1.0rem 0;
+    padding-right: 1rem;
+    color: var(--secondary-color);
+    vertical-align: middle;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"] {
+    color: #fff;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    caret-color: var(--secondary-color);
+    transition: all 0.4s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="number"]:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+} 
+
+.contact-form input[type="submit"] {
+    margin: 0 auto;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+    background: var(--secondary-color);
+    color: #000;
+}
+.contact-form input[type="submit"]:focus {outline: none;}
+
+.contact-info {
+    text-align: left;
+}
+.contact-info h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+}
+.contact-info{
+    font-size: 0.84rem;
+}
+.contact-info .fa-mobile-alt {
+    font-size: 3rem;
+}
+
+.contact-social {
+    font-size: 1.8rem;
+}
+.contact-social li {
+    display: inline-block;
+    margin: 0 0.2rem;
+}
+
+.contact-social .fa-facebook,
+.contact-social .fa-twitter,
+.contact-social .fa-instagram,
+.contact-social .fa-github {
+    transition: all 0.24s;
+}
+
+
+.contact-social .fa-facebook:hover {
+    color: #385fb3;
+}
+.contact-social .fa-twitter:hover {
+    color: #17a6ff;
+}
+.contact-social .fa-instagram:hover {
+    color: #c32aa3;
+}
+.contact-social .fa-github:hover {
+    color: rgb(168, 168, 168);
 }
