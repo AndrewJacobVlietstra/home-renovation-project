@@ -65,3 +65,15 @@ window.onscroll = function() {
     }
 }
 
+// Make top arrow slide over after scrolling down a certain distance
+// const toparrow = document.getElementById('top-arrow');
+
+// window.onscroll = function() {
+//     if(window.pageYOffset > 600) {
+//         toparrow.style.transform = 'translateX(0px)';
+        
+//     } else {
+//         toparrow.style.transform = 'translateX(200px)';
+        
+//     }
+// }
