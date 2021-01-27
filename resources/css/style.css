@@ -11,8 +11,6 @@
     --button-color: rgb(168, 137, 50);
 }
 
-html {scroll-behavior: smooth;}
-
 body {
     background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -36,7 +34,7 @@ ul {
 /* Utilities */
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -119,17 +117,24 @@ input[type="submit"]:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, rgba(161, 118, 0, 0.55), rgba(121, 121, 121, 0.9));
-    border-bottom: 1px solid var(--secondary-color);
     height: 60px;
     
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     text-shadow: 1px 1px 3px #000;
     z-index: 10;
+    transition: all 0.5s;
+}
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(161, 118, 0, 0.55), rgba(121, 121, 121, 0.9));
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .landing-page-title {
