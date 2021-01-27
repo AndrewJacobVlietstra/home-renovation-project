@@ -5,8 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Condor Home Renovations</title>
-        <link rel="stylesheet" href="resources/css/lightbox.css">
-        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/lightbox.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/4cdda27375.js" crossorigin="anonymous"></script>
+        <!-- Lightbox Image Gallery -->
+        <script src="resources/js/lightbox-plus-jquery.min.js"></script>
+        <!--Slick Carousel-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
     </head>
 
 
@@ -81,23 +88,49 @@
             <section id="projects" class="projects-section section-padding">
                 <h1 class="section-heading">Our Projects</h1>
                 <div class="container projects-grid-container">
-                    <div class="grid-item grid-image-1 grid-image"><a href="resources/images/projects/projects-1.jpg"><img src="resources/images/projects/projects-1.jpg" data-lightbox="projects" alt="Project 1"></a></div>
-                    <div class="grid-item grid-image-2 grid-image"><a href="resources/images/projects/projects-2.jpg"><img src="resources/images/projects/projects-2.jpg" data-lightbox="projects" alt="Project 2"></a></div>
-                    <div class="grid-item grid-image-3 grid-image"><a href="resources/images/projects/projects-3.jpg"><img src="resources/images/projects/projects-3.jpg" data-lightbox="projects" alt="Project 3"></a></div>
-                    <div class="grid-item grid-image-4 grid-image"><a href="resources/images/projects/projects-4-min.jpg"><img src="resources/images/projects/projects-4-min.jpg" data-lightbox="projects" alt="Project 4"></a></div>
-                    <div class="grid-item grid-image-5 grid-image"><a href="resources/images/projects/projects-5-min.jpg"><img src="resources/images/projects/projects-5-min.jpg" data-lightbox="projects" alt="Project 5"></a></div>
+                    <div class="grid-item grid-image-1 grid-image"><a href="resources/images/projects/projects-1.jpg" data-lightbox="projects" data-title="Modern-Looking Living Room"><img src="resources/images/projects/projects-1.jpg" alt="Project 1"></a></div>
+                    <div class="grid-item grid-image-2 grid-image"><a href="resources/images/projects/projects-2.jpg" data-lightbox="projects" data-title="Remodeled Spacious Kitchen"><img src="resources/images/projects/projects-2.jpg" alt="Project 2"></a></div>
+                    <div class="grid-item grid-image-3 grid-image"><a href="resources/images/projects/projects-3.jpg" data-lightbox="projects" data-title="Beautiful Small Modern Kitchen Design"><img src="resources/images/projects/projects-3.jpg" alt="Project 3"></a></div>
+                    <div class="grid-item grid-image-4 grid-image"><a href="resources/images/projects/projects-4-min.jpg" data-lightbox="projects" data-title="Bright and Welcoming Living Room"><img src="resources/images/projects/projects-4-min.jpg" alt="Project 4"></a></div>
+                    <div class="grid-item grid-image-5 grid-image"><a href="resources/images/projects/projects-5-min.jpg" data-lightbox="projects" data-title="Sleek Wood Staircase With Black Metal Finish"><img src="resources/images/projects/projects-5-min.jpg" alt="Project 5"></a></div>
                 </div>
             </section>
 
-            <section class="testimonial"></section>
+            <section class="testimonial-section section-padding">
+                <h1 class="section-heading">Client Testimonials</h1>
+                <div class="carousel container">
+                    <div>
+                        <img src="resources/images/client-1.jpg" alt="client1">
+                        <h2 class="name">Edgar Cooper</h2>
+                        <p class="testimonial-paragraph">
+                            <q>We were advised to move out during the process, which was a very wise decision. Exactly on time, we moved back in to our dream home. The team had accomplished an amazing feat, and had kept to schedule, despite all the many changes and additions we threw at them.</q>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="resources/images/client-2.jpg" alt="client2">
+                        <h2 class="name">Cathy Barber</h2>
+                        <p class="testimonial-paragraph">
+                            <q>Having specialists in each area for us was amazing because it just took all the scary parts of the reno away & made it very easy for us… No question, we’d work with Condor again!</q>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="resources/images/client-3.jpg" alt="client3">
+                        <h2 class="name">Frank Gregory</h2>
+                        <p class="testimonial-paragraph">
+                            <q>We must commend Condor Home Renovations and all of your team for your commitment to our project, for your insistence upon quality control and for the customer service level that is so obviously the foundation of your company!</q>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
 
         </main>
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-        <script src="resources/js/lightbox.js"></script>
-        <script src="https://kit.fontawesome.com/4cdda27375.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 
 

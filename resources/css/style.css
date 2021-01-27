@@ -55,6 +55,7 @@ ul {
     font-size: 2.0rem;
     font-weight: 100;
     text-transform: uppercase;
+    letter-spacing: 1px;
 
 }
 .section-heading::after {
@@ -116,14 +117,16 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, rgba(161, 118, 0, 0.55), rgba(107, 107, 107, 0.3));
+    background: linear-gradient(to right, rgba(161, 118, 0, 0.55), rgba(121, 121, 121, 0.9));
     border-bottom: 1px solid var(--secondary-color);
     height: 60px;
+    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     text-shadow: 1px 1px 3px #000;
+    z-index: 10;
 
 }
 
@@ -270,11 +273,51 @@ ul {
     grid-template-areas: 
     "grid-image-1 grid-image-1 grid-image-2 grid-image-2"
     "grid-image-3 grid-image-4 grid-image-4 grid-image-5";
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 }
 .projects-grid-container a {
     width: 100%;
     height: 100%;
 }
 
+.projects-section img {
+    filter: saturate(1.1);
+}
+
+
 /* Customer Testimonials Section */
+
+.testimonial-section h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+}
+
+.testimonial-section img {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.testimonial-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    width: 50%;
+    font-weight: 300;
+    color: #afafaf;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+
+/* Carousel Arrows */
+.slick-prev::before,
+.slick-next::before {
+    color: var(--secondary-color) !important;
+    font-size: 10rem;
+}
+
+/* Carousel dots color */
+.slick-dots li button:before{
+    margin-top: 1rem;
+    color: #fff !important;
+}
