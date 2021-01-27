@@ -58,7 +58,7 @@ window.onscroll = function() {
         setTimeout(function(){
             navbar.style.transform = 'translateY(0px)';
             scrolled = true;
-        }, 150);
+        }, 300);
     } else {
         navbar.classList.remove('sticky');
         scrolled = false;

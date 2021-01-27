@@ -176,16 +176,12 @@ input[type="submit"]:hover {
     bottom: 2%;
     right: 2%;
     font-size: 2rem;
-    padding: 0.5rem 0.8rem;
-    border: 1px solid white;
+    background: #111;
+    padding: 0.6rem 0.9rem;
     border-radius: 50%;
     transition: all 0.25s;
 }
-.main-header .top-arrow i {
-    transition: all 0.25s;
-}
-
-.main-header .top-arrow:hover {border-color: var(--secondary-color);}
+.main-header .top-arrow i {transition: all 0.25s;}
 .main-header .top-arrow i:hover {color: var(--secondary-color);}
 
 /* Services Grid Section */
