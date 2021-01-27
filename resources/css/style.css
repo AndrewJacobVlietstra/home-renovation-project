@@ -7,7 +7,7 @@
 /* Colors */
 :root {
     --primary-color: #222;
-    --secondary-color: rgb(187, 167, 111);
+    --secondary-color: rgb(190, 159, 74);
 }
 
 html {scroll-behavior: smooth;}
@@ -40,7 +40,7 @@ ul {
 }
 
 .l-heading {
-    font-weight: bold;
+    font-weight: 800;
     font-size: 2.5rem;
 }
 
@@ -48,13 +48,30 @@ ul {
     font-size: 1.5rem;
 }
 
+.section-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.section-heading::after {
+    display: block;
+    content: '';
+    width: 8.5rem;
+    height: 2px;
+    background-color: var(--secondary-color);
+    margin: 1.5rem auto 3.5rem auto;
+    
+}
+
 .gold-span {
-    font-weight: bold;
+    font-weight: 800;
     color: var(--secondary-color);
 }
 
 .section-padding {
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .btn {
@@ -84,7 +101,7 @@ ul {
 /* Header Section */
 
 .main-header {
-    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('../images/landing-page-min.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0, 0, 0, 0.6)), url('../images/landing-page-min.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,9 +115,9 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(136, 136, 136, 0.5);
+    background: linear-gradient(to right, rgba(161, 118, 0, 0.75), rgba(107, 107, 107, 0.3));
     border-bottom: 1px solid var(--secondary-color);
-    height: 8%;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -124,13 +141,13 @@ ul {
 
 .main-nav ul li {
     display: inline-block;
-    margin-right: 1rem;
-    padding: 1rem;
+    margin-right: 0.5rem;
+    padding: 1.15rem;
     transition: background 0.2s;
 }
 
 .main-nav ul li:hover {
-    background: rgb(68, 68, 68);
+    background: #222;
 }
 
 .main-nav ul li a {
@@ -199,6 +216,7 @@ ul {
     "grid-item-7 grid-item-7 grid-item-8 grid-item-8";
     justify-items: center;
     align-items: center;
+    grid-gap: 5px;
     
 }
 
@@ -220,4 +238,10 @@ ul {
     margin-top: 1.0rem;
     line-height: 2.0;
     list-style: disc;
+}
+
+.services .btn {
+    display: block;
+    width: 200px;
+    margin-top: 2rem;
 }
