@@ -249,3 +249,26 @@ ul {
     width: 200px;
     margin-top: 2rem;
 }
+
+
+/* Projects Section */
+.grid-image {
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.grid-image-1 {grid-area: grid-image-1;}
+.grid-image-2 {grid-area: grid-image-2;}
+.grid-image-3 {grid-area: grid-image-3;}
+.grid-image-4 {grid-area: grid-image-4;}
+.grid-image-5 {grid-area: grid-image-5;}
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "grid-image-1 grid-image-1 grid-image-2 grid-image-2"
+    "grid-image-3 grid-image-4 grid-image-4 grid-image-5";
+    grid-gap: 3rem;
+}
