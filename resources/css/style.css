@@ -8,6 +8,7 @@
 :root {
     --primary-color: #222;
     --secondary-color: rgb(190, 159, 74);
+    --button-color: rgb(168, 137, 50);
 }
 
 html {scroll-behavior: smooth;}
@@ -54,15 +55,15 @@ ul {
     font-size: 2.0rem;
     font-weight: 100;
     text-transform: uppercase;
+
 }
 .section-heading::after {
     display: block;
     content: '';
-    width: 8.5rem;
+    width: 7rem;
     height: 2px;
     background-color: var(--secondary-color);
-    margin: 1.5rem auto 3.5rem auto;
-    
+    margin: 1.5rem auto 3.5rem auto;  
 }
 
 .gold-span {
@@ -92,7 +93,7 @@ ul {
 }
 
 .btn:hover {
-    background: var(--secondary-color);
+    background: var(--button-color);
     color: #fff;
 }
 
@@ -101,7 +102,7 @@ ul {
 /* Header Section */
 
 .main-header {
-    background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0, 0, 0, 0.6)), url('../images/landing-page-min.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6)), url('../images/landing-page-min.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,13 +116,14 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: linear-gradient(to right, rgba(161, 118, 0, 0.75), rgba(107, 107, 107, 0.3));
+    background: linear-gradient(to right, rgba(161, 118, 0, 0.55), rgba(107, 107, 107, 0.3));
     border-bottom: 1px solid var(--secondary-color);
     height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    text-shadow: 1px 1px 3px #000;
 
 }
 
@@ -216,14 +218,16 @@ ul {
     "grid-item-7 grid-item-7 grid-item-8 grid-item-8";
     justify-items: center;
     align-items: center;
-    grid-gap: 5px;
+    grid-gap: 0.2rem;
     
 }
 
 .services i {
     margin-bottom: 1rem;
     color: var(--secondary-color);
+    transition: all 0.3s;
 }
+.services i:hover {color: rgb(255, 206, 71);}
 
 .services h1,
 .services h2,
