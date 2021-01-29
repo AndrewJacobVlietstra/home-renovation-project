@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -81,6 +82,7 @@ input[type="submit"] {
     margin: 1rem;
     padding: 0.6rem 0.85rem;
     font-size: 110%;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -105,6 +107,7 @@ input[type="submit"]:hover {
 /* Header Section */
 
 .main-header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/landing-page-min.jpg');
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6)), url('../images/landing-page-min.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -115,8 +118,14 @@ input[type="submit"]:hover {
 }
 
 .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 1rem 2rem;
     height: 60px;
@@ -127,6 +136,7 @@ input[type="submit"]:hover {
     width: 100%;
     text-shadow: 1px 1px 3px #000;
     z-index: 10;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -135,6 +145,7 @@ input[type="submit"]:hover {
     top: 0;
     left: 0;
     width: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(161, 118, 0, 0.7)), to(rgba(51, 51, 51, 0.8)));
     background: linear-gradient(to right, rgba(161, 118, 0, 0.7), rgba(51, 51, 51, 0.8));
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -149,9 +160,18 @@ input[type="submit"]:hover {
 }
 
 .landing-page-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     line-height: 1.5;
     height: 100%;
@@ -166,6 +186,7 @@ input[type="submit"]:hover {
     display: inline-block;
     margin-right: 0.5rem;
     padding: 1.16rem;
+    -webkit-transition: background 0.2s;
     transition: background 0.2s;
 }
 
@@ -175,6 +196,7 @@ input[type="submit"]:hover {
 
 .main-nav ul li a {
     color: #f4f4f4;
+    -webkit-transition: all 0.20s;
     transition: all 0.20s;
 }
 
@@ -191,21 +213,33 @@ input[type="submit"]:hover {
     padding: 0.6rem 0.9rem;
     border-radius: 50%;
     z-index: 20;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
 }
-.main-header .top-arrow i {transition: all 0.25s;}
+.main-header .top-arrow i {-webkit-transition: all 0.25s;transition: all 0.25s;}
 .main-header .top-arrow i:hover {color: var(--secondary-color);}
 
 /* Services Grid Section */
 .services img {
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
 .grid-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     border: 1px solid var(--secondary-color);
     width: 100%;
@@ -251,6 +285,8 @@ input[type="submit"]:hover {
     "grid-item-7 grid-item-7 grid-item-8 grid-item-8"
     "grid-item-7 grid-item-7 grid-item-8 grid-item-8";
     justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     grid-gap: 0.25rem;
     
@@ -260,6 +296,7 @@ input[type="submit"]:hover {
 .contact-info i {
     margin-bottom: 1rem;
     color: var(--secondary-color);
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 .services i:hover,
@@ -289,7 +326,9 @@ input[type="submit"]:hover {
 
 /* Projects Section */
 .grid-image {
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
     cursor: pointer;
 }
@@ -314,6 +353,7 @@ input[type="submit"]:hover {
 }
 
 .projects-section img {
+    -webkit-filter: saturate(1.1);
     filter: saturate(1.1);
 }
 
@@ -371,6 +411,8 @@ footer {
     grid-template-areas:
     "discuss-project contact-form contact-info";
     justify-items: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     grid-gap: 3rem;
 }
@@ -434,6 +476,7 @@ footer {
     border: none;
     border-bottom: 1px solid var(--secondary-color);
     caret-color: var(--secondary-color);
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -488,6 +531,7 @@ footer {
 .contact-social .fa-twitter,
 .contact-social .fa-instagram,
 .contact-social .fa-github {
+    -webkit-transition: all 0.24s;
     transition: all 0.24s;
 }
 
