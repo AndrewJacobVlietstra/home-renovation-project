@@ -1,6 +1,11 @@
 
 /* IPad Pro */
 @media only screen and (max-width: 1024px) {
+
+    .main-header {
+        background-attachment: scroll;
+    }
+
     body {
         font-size: 90%;
     }
@@ -55,6 +60,10 @@
 
 /* IPad or Large Phones */
 @media only screen and (max-width: 768px) {
+
+    .main-header {
+        background-attachment: scroll;
+    }
 
     .l-heading {
         font-weight: 800;
@@ -129,6 +138,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+
+    .main-header {
+        background-attachment: scroll;
+    }
 
     .mobile-nav-icon {
         top: 5%;
