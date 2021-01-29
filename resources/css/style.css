@@ -11,6 +11,8 @@
     --button-color: rgb(168, 137, 50);
 }
 
+html {overflow-x: hidden;}
+
 body {
     background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
@@ -137,6 +139,15 @@ input[type="submit"]:hover {
     border-bottom: 1px solid var(--secondary-color);
 }
 
+.mobile-nav-icon {
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 1.6rem;
+    cursor: pointer;
+    float: right;
+}
+
 .landing-page-title {
     display: flex;
     flex-direction: column;
@@ -179,6 +190,7 @@ input[type="submit"]:hover {
     background: #111;
     padding: 0.6rem 0.9rem;
     border-radius: 50%;
+    z-index: 20;
     transition: all 0.25s;
 }
 .main-header .top-arrow i {transition: all 0.25s;}
@@ -356,14 +368,17 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
+    grid-template-areas:
+    "discuss-project contact-form contact-info";
     justify-items: center;
     align-items: baseline;
-    grid-gap: 5rem;
+    grid-gap: 3rem;
 }
 
 
 .discuss-project {
     text-align: left;
+    grid-area: discuss-project;
 }
 .discuss-project h2 {
     margin-top: 1rem;
@@ -400,13 +415,15 @@ footer {
 }
 
 .contact-info i {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     margin: 1.0rem 0;
     padding-right: 1rem;
     color: var(--secondary-color);
     vertical-align: middle;
 }
-
+.contact-form {
+    grid-area: contact-form;
+}
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="number"] {
@@ -453,6 +470,7 @@ footer {
 }
 .contact-info{
     font-size: 0.84rem;
+    grid-area: contact-info;
 }
 .contact-info .fa-mobile-alt {
     font-size: 3rem;

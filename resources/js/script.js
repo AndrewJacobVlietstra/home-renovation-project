@@ -58,7 +58,7 @@ window.onscroll = function() {
         setTimeout(function(){
             navbar.style.transform = 'translateY(0px)';
             scrolled = true;
-        }, 300);
+        }, 150);
     } else {
         navbar.classList.remove('sticky');
         scrolled = false;
@@ -77,3 +77,23 @@ window.onscroll = function() {
         
 //     }
 // }
+
+/* Mobile Navigation */
+$('.mobile-nav-icon').click(function() {
+  var nav = $('.nav-list');
+  var icon = $('.mobile-nav-icon i');
+
+  nav.slideToggle(400);
+  if (icon.hasClass('fas fa-bars')) {
+      icon.removeClass('fas fa-bars');
+      icon.addClass('fas fa-times');
+      
+  } else {
+      icon.removeClass('fas fa-times');
+      icon.addClass('fas fa-bars');
+      
+
+  }
+
+
+})

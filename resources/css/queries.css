@@ -1,0 +1,240 @@
+
+/* IPad Pro */
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 90%;
+    }
+
+    .main-nav ul {
+        display: none;
+        margin-right: 2rem;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        position: fixed;
+        top: 0.8%;
+        right: 2%;
+        background: #666;
+        padding: 0.5rem 0.6rem;
+        border-radius: 50%;
+        z-index: 20;
+    }
+
+
+    .grid-item-8 {
+        font-size: 90%;
+        padding: 1.5rem;
+    }
+    .grid-item {height: 400px;}
+
+    .services-grid-container {
+        overflow: hidden;
+        width: 95%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "grid-item-1 grid-item-1 grid-item-2 grid-item-2"
+        "grid-item-3 grid-item-4 grid-item-5 grid-item-6"
+        "grid-item-7 grid-item-7 grid-item-8 grid-item-8";
+  }
+
+  .projects-grid-container {
+    overflow: hidden;
+      width: 95%;
+      grid-gap: 1rem;
+  }
+
+  .discuss-project,
+  .contact-info {
+      width: 210px;
+  }
+
+
+}
+
+/* IPad or Large Phones */
+@media only screen and (max-width: 768px) {
+
+    .l-heading {
+        font-weight: 800;
+        font-size: 2.0rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .m-heading {
+        font-size: 1.0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        height: 100px;
+        /* transition: none; */
+    }
+
+    .mobile-nav-icon {
+        top: 4%;
+        right: 4%;
+    }
+
+    .grid-item {height: 300px;}
+    .grid-item-1 {font-size: 85%;}
+    .grid-item-8 {
+        font-size: 75%;
+        padding: 1.0rem;
+    }
+
+    .services-grid-container {
+        overflow-x: hidden;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "grid-item-1 grid-item-2"
+        "grid-item-3 grid-item-4"
+        "grid-item-5 grid-item-6"
+        "grid-item-7 grid-item-8";
+  }
+
+
+    .projects-grid-container {
+        overflow: hidden;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "grid-image-1 grid-image-2"
+        "grid-image-3 grid-image-5"
+        "grid-image-4 grid-image-4";
+        grid-gap: 1rem;
+    }
+
+    .contact-grid-container {
+        overflow-x: hidden;
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "discuss-project contact-info"
+        "contact-form contact-form";
+        grid-gap: 1rem;
+    }
+
+    .discuss-project {line-height: 1.5;}
+
+    .contact-form {margin-top: 1.5rem;}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .mobile-nav-icon {
+        top: 5%;
+        right: 3%;
+        padding: 0.0rem 0.0rem;
+        background: none;
+    }
+
+    .nav-list li a{
+        font-size: 0.75rem;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+    }
+
+    .l-heading {
+        font-weight: 800;
+        font-size: 2.0rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .m-heading {
+        font-size: 1.0rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-nav ul li {
+        margin-right: 0.1rem;
+        padding: 0.5rem;
+        font-size: 75%;}
+
+    .services-grid-container {
+        overflow-x: hidden;
+        margin: 0 auto;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "grid-item-1 grid-item-1"
+        "grid-item-2 grid-item-2"
+        "grid-item-3 grid-item-3"
+        "grid-item-4 grid-item-4"
+        "grid-item-5 grid-item-5"
+        "grid-item-6 grid-item-6"
+        "grid-item-7 grid-item-7"
+        "grid-item-8 grid-item-8";
+  }
+
+    .projects-grid-container {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        "grid-image-1"
+        "grid-image-2"
+        "grid-image-3"
+        "grid-image-4"
+        "grid-image-5";
+        grid-gap: 1.0rem;
+    }
+
+
+    footer {
+        padding-top: 1rem;
+    }
+    .contact-grid-container {
+        overflow-x: hidden;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "discuss-project"
+        "contact-info"
+        "contact-form";
+        grid-gap: 0rem;
+    }
+
+    .contact-grid-container .contact-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "contact-name"
+        "contact-email"
+        "contact-phone"
+        "contact-address";
+        text-align: center;
+        grid-gap: 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .testimonial-paragraph {
+        font-size: 106%;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+        display: none;
+    }
+    .slick-dots li button:before{
+        margin-top: 0.4rem;
+    }
+
+}
