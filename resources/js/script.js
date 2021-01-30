@@ -40,7 +40,7 @@ $('a[href*="#"]')
 $(document).ready(function (){
     $(".carousel").slick({
         autoplay: true,
-        autoplaySpeed: 7000,
+        autoplaySpeed: 8000,
         dots: true
     });
 });
