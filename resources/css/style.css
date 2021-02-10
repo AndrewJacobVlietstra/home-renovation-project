@@ -44,10 +44,12 @@ ul {
 .l-heading {
     font-weight: 800;
     font-size: 2.5rem;
+    text-shadow: 0 .5rem 1rem black;
 }
 
 .m-heading {
     font-size: 1.5rem;
+    text-shadow: 0 .5rem 1rem black;
 }
 
 .section-heading {
@@ -107,8 +109,8 @@ input[type="submit"]:hover {
 /* Header Section */
 
 .main-header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/landing-page-min.jpg');
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.6)), url('../images/landing-page-min.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.70)), to(rgba(190, 159, 74, 0.4))), url('../images/landing-page-min.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(190, 159, 74, 0.4)), url('../images/landing-page-min.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
